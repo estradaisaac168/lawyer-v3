@@ -12199,7 +12199,13 @@ body {
   width: auto;
 }
 
-.service .service-benefits .list-benefits .list-benefits-item .bi {
+.service .service-benefits .list-benefits .list-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 9fr;
+  align-items: center;
+}
+.service .service-benefits .list-benefits .list-grid .bi {
   font-size: 2rem;
   margin-right: 1rem;
   color: red;
