@@ -131,19 +131,30 @@
 
     .service-benefits {
         .list-benefits {
+
+            width: 100%;
+
+
+            @include m.breakpoint-up(lg){
+                // width: 80%;
+                // margin: 0 auto;
+            }
+
             .list-grid {
 
-                display: grid;
-                gap: 1rem;
-                grid-template-columns: 1fr 9fr;
+                display: flex;
+                flex-direction: row;
                 align-items: center;
+                gap: 2rem;
+                padding: 0.5rem;
 
-                .list-benefits-item {}
+                .list-benefits-item {
+                    margin: 0;
+                }
 
                 .bi {
-                    font-size: 2rem;
-                    margin-right: 1rem;
-                    color: red;
+                    font-size: 3rem;
+                    color: v.$secondary-color;
                 }
             }
 
