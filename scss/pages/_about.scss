@@ -1,5 +1,6 @@
 @use '../base/variables' as v;
 @use '../base/mixins' as m;
+@use '../base/global';
 
 // About
 .about {
@@ -104,49 +105,19 @@
 
 .team {
 
-
     .team-content {
 
-        // display: grid;
-        // //grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-        // place-items: center;
-        // gap: 3rem;
-
-        // @include m.breakpoint-up(md) {
-        //     grid-template-columns: repeat(2, 1fr);
-        // }
-
-        // @include m.breakpoint-up(lg) {
-        //     grid-template-columns: repeat(3, 1fr);
-        //     // gap: 3rem;
-        // }
-
-        // @include m.breakpoint-up(xl) {
-        //     //grid-template-columns: repeat(3, 1fr);
-        //     // gap: 3rem;
-        // }
-
         .card {
-            border: none;
+            border: 2px solid v.$secondary-color;
             width: 18.75rem;
             height: 19.75rem;
             box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
 
             @include m.breakpoint-up(lg) {
-                width: 17rem;
-                height: 18rem;
+                // width: 17rem;
+                // height: 18rem;
             }
-
-            // @include m.breakpoint-up(xl) {
-            //     width: 19.75rem;
-            //     height: 20.75rem;
-            // }
-
-            // @include m.breakpoint-up(xxl) {
-            //     width: 20.75rem;
-            //     height: 21.75rem;
-            // }
 
             &:hover {
                 transform: translateY(-5px);
