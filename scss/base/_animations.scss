@@ -1,6 +1,17 @@
 @use '../base/variables' as v;
 @use '../base/mixins' as m;
 
+.animation{
+    opacity: 0;
+    transition: all 1.5s ease-out;
+    overflow: hidden;
+    will-change: transform, opacity; 
+    position: relative;
+    max-width: 100%;  
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
 .title-animation {
     opacity: 0;
     transform: translateY(50px);
@@ -21,17 +32,29 @@
 }
 
 .animation-left {
-    opacity: 0;
+    // opacity: 0;
+    @extend .animation;
     transform: translateX(-50px);
-    transition: all 1.5s ease-out;
-    overflow: hidden;
+    // transition: all 1.5s ease-out;
+    // overflow: hidden;
+    // will-change: transform, opacity; 
+    // position: relative;
+    // max-width: 100%;  
+    // box-sizing: border-box;
+    // overflow: hidden;
 }
 
 .animation-right {
-    opacity: 0;
-    transform: translateX(50px);
-    transition: all 1.5s ease-out;
-    overflow: hidden;
+    // opacity: 0;
+    @extend .animation;
+
+    // transform: translateX(50px);
+    // transition: all 1.5s ease-out;
+    // will-change: transform, opacity; 
+    // position: relative;
+    // max-width: 100%;  
+    // box-sizing: border-box;
+    // overflow: hidden;
 }
 
 .animation-right.show,
