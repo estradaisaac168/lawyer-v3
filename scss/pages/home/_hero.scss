@@ -6,18 +6,10 @@
 .hero {
 
     background: url('../img/hero.webp') no-repeat center center/cover;
-    min-height: 35rem;
+    min-height: 37.5rem;
 
     .hero-overlay {
-
         @extend .overlay;
-        // position: absolute;
-        // top: 0;
-        // left: 0;
-        // width: 100%;
-        // height: 100%;
-        // background-color: rgba(0, 0, 0, 0.6);
-        // z-index: 1;
     }
 
 

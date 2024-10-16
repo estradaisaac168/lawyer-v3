@@ -129,6 +129,8 @@
 
 .service {
 
+    overflow: hidden;
+
     .service-benefits {
         .list-benefits {
 
@@ -136,8 +138,8 @@
 
 
             @include m.breakpoint-up(lg){
-                // width: 80%;
-                // margin: 0 auto;
+                width: 80%;
+                margin: 0 auto;
             }
 
             .list-grid {
