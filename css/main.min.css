@@ -12123,23 +12123,6 @@ body {
   object-fit: cover;
 }
 
-.services .services-content-cards {
-  display: grid;
-  place-items: center;
-  gap: 1.5rem;
-}
-@media (min-width: 768px) {
-  .services .services-content-cards {
-    grid-template-columns: repeat(2, 1fr);
-    place-items: unset;
-  }
-}
-@media (min-width: 992px) {
-  .services .services-content-cards {
-    grid-template-columns: repeat(3, 1fr);
-    place-items: unset;
-  }
-}
 .services .services-content-cards .card {
   width: 25;
   height: 22rem;
