@@ -23,12 +23,18 @@
         // }
 
         .card {
-            width: 25;
+            width: 18.75rem;
             height: 22rem;
             border-radius: 20px;
             overflow: hidden;
             // border: 8px solid #fff;
             position: relative;
+
+
+            @include m.breakpoint-up(sm) {
+                width: 22rem;
+
+            }
 
             @include m.breakpoint-up(md) {
                 width: auto;
